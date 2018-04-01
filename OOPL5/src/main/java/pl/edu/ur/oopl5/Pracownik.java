@@ -1,5 +1,7 @@
 package pl.edu.ur.oopl5;
-
+/*
+@autor Roman
+ */
 public class Pracownik {
 
 

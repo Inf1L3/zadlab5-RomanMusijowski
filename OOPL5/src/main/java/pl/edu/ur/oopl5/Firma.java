@@ -1,4 +1,6 @@
 package pl.edu.ur.oopl5;
+/*@autor Roman
+*/
 public class Firma {
 
     Pracownik[] pracowniki = new Pracownik[100];

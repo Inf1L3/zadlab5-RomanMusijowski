@@ -12,8 +12,10 @@ public class Main {
         System.out.println("Podaj rozmiar stosu ");
         int size = scanner.nextInt();
 
-        Stack stack = new Stack(size);
-        while (size > 0) {
+        Stack stack1 = new Stack(size);
+        int whileStos=1;
+
+        while (whileStos == 1 ) {
 
             System.out.println("Co chcesz zrobic ze stosem ?");
             System.out.println("1. Dodac element ");
@@ -25,25 +27,26 @@ public class Main {
 
             switch (wybor) {
                 case 1:
-                    stack.push();
+                    int elem =scanner.nextInt();
+                    stack1.push(elem);
                     break;
                 case 2:
-                    stack.pop();
+                    stack1.pop();
                     break;
                 case 3:
-                    stack.showStack();
+                    stack1.showStack();
                     break;
                 case 4:
-                    stack.showSize();
+                    stack1.showSize();
                     break;
                 default:
                     System.out.println("Niepoprawny wybor ");
             }
-            size--;
+            System.out.println("Powtorzyc dzialanie (1 or 0)?");
+            whileStos = scanner.nextInt();
         }
-        System.out.println("Stos pełny ");
 
-//
+
 //
 //
 //        //Zadanie 5
