@@ -9,42 +9,42 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Podaj rozmiar stosu ");
-        int size = scanner.nextInt();
-
-        Stack stack1 = new Stack(size);
-        int whileStos=1;
-
-        while (whileStos == 1 ) {
-
-            System.out.println("Co chcesz zrobic ze stosem ?");
-            System.out.println("1. Dodac element ");
-            System.out.println("2. Usunac ze stosu ");
-            System.out.println("3. Pokazac stos ");
-            System.out.println("4. Pokaz rozmiar ");
-
-            int wybor = scanner.nextInt();
-
-            switch (wybor) {
-                case 1:
-                    int elem =scanner.nextInt();
-                    stack1.push(elem);
-                    break;
-                case 2:
-                    stack1.pop();
-                    break;
-                case 3:
-                    stack1.showStack();
-                    break;
-                case 4:
-                    stack1.showSize();
-                    break;
-                default:
-                    System.out.println("Niepoprawny wybor ");
-            }
-            System.out.println("Powtorzyc dzialanie (1 or 0)?");
-            whileStos = scanner.nextInt();
-        }
+//        System.out.println("Podaj rozmiar stosu ");
+//        int size = scanner.nextInt();
+//
+//        Stack stack1 = new Stack(size);
+//        int whileStos=1;
+//
+//        while (whileStos == 1 ) {
+//
+//            System.out.println("Co chcesz zrobic ze stosem ?");
+//            System.out.println("1. Dodac element ");
+//            System.out.println("2. Usunac ze stosu ");
+//            System.out.println("3. Pokazac stos ");
+//            System.out.println("4. Pokaz rozmiar ");
+//
+//            int wybor = scanner.nextInt();
+//
+//            switch (wybor) {
+//                case 1:
+//                    int elem =scanner.nextInt();
+//                    stack1.push(elem);
+//                    break;
+//                case 2:
+//                    stack1.pop();
+//                    break;
+//                case 3:
+//                    stack1.showStack();
+//                    break;
+//                case 4:
+//                    stack1.showSize();
+//                    break;
+//                default:
+//                    System.out.println("Niepoprawny wybor ");
+//            }
+//            System.out.println("Powtorzyc dzialanie (1 or 0)?");
+//            whileStos = scanner.nextInt();
+//        }
 
 
 //
@@ -58,14 +58,14 @@ public class Main {
 //
 //
 //
-//
+//        Firma firma1 = new Firma();
 //        while (powtorkaWhile == 1){
 //
 //            System.out.println("1.Dodac pracownika ");
 //            System.out.println("2.Spis pracownikow ");
 //
 //            dzialanie = scanner.nextInt();
-//            Firma firma1 = new Firma();
+//
 //
 //            switch (dzialanie){
 //                case 1:
@@ -84,7 +84,6 @@ public class Main {
 //                    stanowisko = scanner.nextLine();
 //
 //                    Pracownik people = new Pracownik(imie, nazwisko,wiek, stanowisko);
-//
 //
 //                    firma1.newWorking(people);
 //                    break;

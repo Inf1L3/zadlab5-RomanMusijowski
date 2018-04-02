@@ -4,13 +4,16 @@ package pl.edu.ur.oopl5;
 public class Firma {
 
     Pracownik[] pracowniki = new Pracownik[100];
-    public int i=0;
+    int i=0;
+    int size = 100;
+    int top=-1;
+
+    public Firma( ) { }
 
     public void newWorking(Pracownik pracownik){
-
+        int i = ++top;
         if(i<100){
             pracowniki[i]=pracownik;
-            i++;
             System.out.println("Pracownik dodany ");
         } else {
             System.out.println("Nie ma miejsca na firmie ");
@@ -18,12 +21,12 @@ public class Firma {
     }
 
     public void showWorking(){
-        int k=0;
-        if(k==0){
+        int k=top;
+        if(k==-1){
             System.out.println("Nie ma pracownikow ");
         } else {
-            System.out.println("Na firmie sa "+(i+1)+" pracownikow ");
-            for (k =i;k>=0;k--){
+            System.out.println("Na firmie sa "+(top+1)+" pracownikow ");
+            for (k =top;k>=0;k--){
                 System.out.println(pracowniki[k]);
             }
         }
